@@ -18,6 +18,99 @@ Built with React, TypeScript, Tauri, and powered by Claude AI.
 
 ---
 
+## 💡 The Vision
+
+> **"Code is for machines. Creation is for humans."**
+
+### A Revolutionary Approach to AI-Assisted Creation
+
+Claude Code reimagines AI-assisted creation by recognizing a fundamental truth: **different users need different interaction models**. Not different visual themes—different ways of thinking, working, and creating.
+
+This project serves everyone—from experienced developers to anyone with a problem to solve—through dual interaction models and the groundbreaking **Allowance Control** methodology.
+
+### The Problem
+
+Current AI coding tools force everyone into the same interaction model:
+
+- Developers get tools that assume coding knowledge
+- Non-developers get "dumbed down" versions that limit capability
+- No one gets an interface optimized for how they naturally think
+
+**The result?** AI's transformative potential reaches only a fraction of the people who could benefit from it.
+
+### The Solution: Dual Interaction Models
+
+#### ⚡ Claude Code - Terminal Interface
+
+**Who:** Experienced developers
+**Why:** They live in the terminal - it's their native environment
+**How:** Keyboard-driven TUI, technical language, direct control
+**Philosophy:** Speed, efficiency, respect for expertise
+
+#### 🎯 Claude Modular - Visual Constructor
+
+**Who:** Anyone with a problem to solve
+**Why:** Visual thinking is universal - code is not
+**How:** Guided visual builder, AI-assisted, mouse-friendly
+**Philosophy:** Accessible, empowering, no barriers to entry
+
+### The Innovation: Allowance Control
+
+**Allowance Control** is a design pattern that breaks any creative task into logical, manageable steps that work for everything.
+
+#### The Seven Stages
+
+1. **ALLOW** → Grant permission/establish possibility
+2. **CREATE** → Generate the element/motion/behavior
+3. **CONTROL** → Define parameters and constraints
+4. **CALIBRATE** → Fine-tune the behavior
+5. **PLACE** → Position in space/context
+6. **ADJUST** → Refine the positioning
+7. **FEATURE** → Lock in as production-ready code
+
+#### Why This Works
+
+- **Progressive Complexity:** Start simple, add sophistication gradually
+- **Universal Application:** Same steps work for buttons, animations, forms, layouts
+- **Natural Thinking:** Mirrors how humans actually approach design
+- **AI-Guidable:** Each step is a clear prompt for AI assistance
+- **Scales Infinitely:** Works for simple buttons or complex systems
+
+### The Visual Constructor
+
+The visual constructor is the heart of Modular Mode. It's where ideas become tangible.
+
+#### Core Principles
+
+- **Visual First:** See what you're building in real-time
+- **AI-Guided:** Claude walks you through Allowance Control
+- **Progressive Disclosure:** Complexity appears when needed, not before
+- **Professional Output:** Generates production-ready code
+- **Accessible to Anyone:** No coding knowledge required
+
+### Why This Matters
+
+We're at an inflection point. AI can generate code, but that's not enough.
+
+**The real breakthrough is making creation accessible to everyone while maintaining professional quality.**
+
+That's what Claude Code does.
+
+### The Ask
+
+This started as a job application demo for Anthropic's Product Designer, Claude Code role.
+
+It became something bigger: **a vision for the future of human-AI collaboration in creation.**
+
+This is just the beginning.
+
+The question isn't "Can this be built?"
+**The question is "Who will build it first?"**
+
+I hope it's us. I hope it's Anthropic.
+
+---
+
 ## ✨ Features
 
 ### 🖥️ Terminal Mode
@@ -414,6 +507,15 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-**Built with ❤️ by ultracreative**
+## 📬 Contact
 
-*Claude Code - Where Terminal meets Editor meets Builder*
+**Dan Rodriguez**
+Email: [danultracreative@gmail.com](mailto:danultracreative@gmail.com)
+
+For inquiries, collaboration opportunities, or to discuss the vision behind Claude Code, feel free to reach out.
+
+---
+
+**Built with ❤️ by Dan Rodriguez**
+
+*"Code is for machines. Creation is for humans."*
