@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-terminal-bg text-white font-mono;
+    @apply m-0 overflow-hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    @apply w-screen h-screen;
+  }
+}
+
+@layer utilities {
+  .terminal-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #4b5563 #1f2937;
+  }
+
+  .terminal-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .terminal-scrollbar::-webkit-scrollbar-track {
+    background: #1f2937;
+  }
+
+  .terminal-scrollbar::-webkit-scrollbar-thumb {
+    background: #4b5563;
+    border-radius: 4px;
+  }
+
+  .terminal-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+  }
+}
