@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Folder, FolderOpen, File, CaretRight, CaretDown, FolderOpen as FolderOpenIcon } from '@phosphor-icons/react';
+import { Folder, FolderOpen, File, CaretRight, CaretDown } from '@phosphor-icons/react';
 import { invoke } from '@tauri-apps/api/core';
 
 interface FileExplorerProps {

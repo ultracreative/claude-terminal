@@ -1,87 +1,124 @@
-# Claude Terminal
+# Claude Code
 
-A next-generation, dual-interface terminal application powered by AI. Built for developers and creators who want both powerful command-line tools and intuitive visual design capabilities.
+**AI-Powered Development Environment** - A next-generation IDE combining terminal power, intelligent code editing, and visual UI building in one seamless application.
 
-## 🌟 Features
+![Version](https://img.shields.io/badge/version-0.1.0-blue)
+![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-### Dual Interface Modes
+## 🌟 Overview
 
-**Code Mode** - Professional Terminal Emulator
-- Full-featured terminal with xterm.js
-- Native PTY integration (portable-pty)
-- Supports all your favorite command-line tools
-- Responsive terminal with automatic resize detection
-- Cross-platform: macOS, Windows, Linux
+Claude Code is a revolutionary development environment that brings together three powerful modes:
 
-**Modular Mode** - AI-Powered Visual Constructor
-- Drag-and-drop UI builder with live preview
-- Create buttons, containers, text, cards, and input fields
-- Real-time property editing (colors, sizes, fonts, etc.)
-- Hierarchical layer system with parent-child nesting
-- Zoom controls (25%-200%) with keyboard shortcuts
+- **Terminal Mode** - Full-featured terminal emulator
+- **Editor Mode** - Monaco editor with AI assistance
+- **Modular Mode** - Visual UI builder with drag-and-drop
 
-### Visual Constructor Features
+Built with React, TypeScript, Tauri, and powered by Claude AI.
 
-**Canvas Tools**
-- **Drag & Drop**: Move elements freely on infinite canvas
-- **Resize**: Corner handles for precise sizing (min: 50x30px)
-- **Select & Edit**: Click to select, live property updates
-- **Zoom**: Cmd/Ctrl +/- to zoom, Cmd/Ctrl 0 to reset
-- **Grid**: Visual grid overlay for alignment
+---
 
-**Layer Management**
-- **Hierarchical Layers**: See all elements organized by z-index
-- **Expand/Collapse**: Containers show nested children with indentation
-- **Drag to Reorder**: Change stacking order by dragging layers
-- **Nest Elements**: Hold Shift while dropping to nest into containers
-- **Show/Hide**: Toggle element visibility with eye icon
-- **Parent-Child Movement**: Moving containers moves all nested children
+## ✨ Features
 
-**Properties Panel**
-- **Position & Size**: Precise X/Y coordinates and width/height
-- **Text Content**: Edit element labels and content
-- **Colors**: Visual color pickers for background and text
-- **Border Radius**: Slider control (0-50px)
-- **Padding**: Slider control (0-50px)
-- **Typography**: Font size (10-48px) and weight options
+### 🖥️ Terminal Mode
 
-**Conversation History**
-- Track your creative process with Claude
-- Review past interactions and decisions
-- Toggle visibility with chat icon
+Professional terminal emulator with modern features:
 
-## 🎯 Demo
+- **Full PTY Integration** - Native shell experience with portable-pty
+- **xterm.js** - Industry-standard terminal rendering
+- **Responsive Sizing** - Automatic resize detection with ResizeObserver
+- **Rich Colors** - 256-color and true-color support
+- **Shell Support** - Works with bash, zsh, fish, PowerShell, etc.
+- **Cross-Platform** - macOS, Windows, Linux
 
-### Getting Started
+### 📝 Editor Mode (NEW!)
 
-1. **Launch the app** - You'll see the welcome screen in Code Mode
-2. **Switch to Modular Mode** - Click the toggle in the top-right
-3. **Create your first element** - Type "create a button" in the input
-4. **Experiment with the tools**:
-   - Click an element to select it
-   - Drag elements around the canvas
-   - Use resize handles to adjust size
-   - Edit properties in the right panel
-   - Try keyboard shortcuts for zoom
+Monaco-powered code editor with integrated AI assistance:
 
-### Example Workflow: Building a Login Form
+**Code Editor Features:**
+- **Monaco Editor** - Same engine as VS Code
+- **Syntax Highlighting** - Support for TypeScript, JavaScript, Python, Rust, and more
+- **File Explorer** - Tree view with expand/collapse
+- **Multi-File Tabs** - Open multiple files simultaneously
+- **Dirty State Tracking** - Visual indicators for unsaved changes (green dot)
+- **Real File Operations** - Read and write to disk via Tauri
+- **Smart Filtering** - Auto-hides node_modules, .git, target, dist
 
-```
-1. Create a container → "create a container"
-2. Create input fields → "create an input field" (twice)
-3. Create a button → "create a submit button"
-4. Organize in layers:
-   - Drag button over container
-   - Hold Shift and drop to nest inside
-   - Repeat for input fields
-5. Style your components:
-   - Select container, adjust background color
-   - Select button, change to green with white text
-   - Adjust sizes using resize handles
-6. Move as a group:
-   - Drag the container
-   - All nested elements move together!
-```
+**AI Chat Assistant:**
+- **Context-Aware** - Claude sees your entire file content
+- **Quick Actions** - One-click for common tasks:
+  - 💡 Explain this code
+  - 🛡️ Add error handling
+  - ⚡ Optimize this code
+  - 📘 Add TypeScript types
+- **Conversation History** - Maintains context throughout your session
+- **General Chat** - Ask programming questions anytime, even without a file open
+- **Code Suggestions** - Get complete implementations, refactoring ideas, debugging help
+
+**File System Integration:**
+- Browse project directory structure
+- Open files with syntax detection
+- Save changes with Cmd/Ctrl+S
+- Automatic language detection from file extension
+
+### 🎨 Modular Mode
+
+Visual UI builder for rapid prototyping:
+
+**Canvas Tools:**
+- **Drag & Drop** - Move elements freely on infinite canvas
+- **Multi-Resize** - 4 corner handles for precise sizing (min: 50x30px)
+- **Select & Edit** - Click to select, live property updates
+- **Zoom** - 25%-200% with Cmd/Ctrl +/-
+- **Visual Grid** - Alignment guides
+
+**Layer Management:**
+- **Hierarchical Layers** - See all elements organized by z-index
+- **Expand/Collapse** - Containers show nested children with indentation
+- **Drag to Reorder** - Change stacking order by dragging layers
+- **Nest Elements** - Hold Shift while dropping to nest into containers
+- **Show/Hide** - Toggle element visibility with eye icon
+- **Parent-Child Movement** - Moving containers moves all nested children
+- **Cascade Delete** - Deleting parents removes all children
+
+**Properties Panel:**
+- Position & Size (X, Y, width, height)
+- Text Content editing
+- Color pickers (background, text)
+- Border Radius (0-50px)
+- Padding (0-50px)
+- Typography (font size 10-48px, weight)
+
+**Element Types:**
+- Buttons
+- Containers
+- Text labels
+- Input fields
+- Cards
+
+---
+
+## ⌨️ Keyboard Shortcuts
+
+### Mode Switching
+- **Cmd/Ctrl + Shift + T** → Terminal Mode
+- **Cmd/Ctrl + Shift + E** → Editor Mode
+- **Cmd/Ctrl + Shift + M** → Modular Mode
+
+### Editor Mode
+- **Cmd/Ctrl + S** → Save current file
+- **Cmd/Ctrl + K** → Toggle AI Assistant panel
+
+### Modular Mode
+- **Cmd/Ctrl + Plus (+)** → Zoom in
+- **Cmd/Ctrl + Minus (-)** → Zoom out
+- **Cmd/Ctrl + 0** → Reset zoom to 100%
+- **Click** → Select element
+- **Click + Drag** → Move element
+- **Drag handle (⋮⋮)** → Reorder layers
+- **Shift + Drop on container** → Nest element inside
+
+---
 
 ## 🚀 Installation
 
@@ -90,7 +127,7 @@ A next-generation, dual-interface terminal application powered by AI. Built for 
 - **Node.js** 18+ and npm
 - **Rust** 1.70+ (for Tauri)
 - **System Dependencies**:
-  - macOS: Xcode Command Line Tools
+  - macOS: Xcode Command Line Tools (`xcode-select --install`)
   - Windows: Microsoft C++ Build Tools
   - Linux: libwebkit2gtk, libgtk-3
 
@@ -98,7 +135,7 @@ A next-generation, dual-interface terminal application powered by AI. Built for 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/claude-terminal.git
+git clone https://github.com/ultracreative/claude-terminal.git
 cd claude-terminal
 
 # Install dependencies
@@ -110,74 +147,131 @@ npm run tauri dev
 
 The app will launch with hot-module reloading enabled.
 
-## ⌨️ Keyboard Shortcuts
+### Download Pre-Built App
 
-### Global
-- **Cmd/Ctrl + Plus (+)** - Zoom in
-- **Cmd/Ctrl + Minus (-)** - Zoom out
-- **Cmd/Ctrl + 0** - Reset zoom to 100%
+**macOS (Apple Silicon):**
+1. Go to [Releases](https://github.com/ultracreative/claude-terminal/releases)
+2. Download `Claude Code_0.1.0_aarch64.dmg`
+3. Open the DMG and drag to Applications
+4. Launch Claude Code!
 
-### Canvas (Modular Mode)
-- **Click** - Select element
-- **Click + Drag** - Move element
-- **Drag handle (⋮⋮)** - Reorder layers
-- **Shift + Drop on container** - Nest element inside
+---
+
+## 🎯 Usage Examples
+
+### Example 1: Terminal Workflow
+
+```bash
+1. Launch Claude Code
+2. Press Cmd+Shift+T (switch to Terminal)
+3. Run your favorite commands:
+   - npm install
+   - git status
+   - python script.py
+```
+
+### Example 2: Code Editing with AI
+
+```bash
+1. Press Cmd+Shift+E (switch to Editor)
+2. Open a file from the file explorer
+3. Press Cmd+K to open AI chat
+4. Ask: "Explain this code"
+5. Ask: "Add error handling for edge cases"
+6. Copy the suggestions and apply them
+7. Press Cmd+S to save
+```
+
+### Example 3: Building a Login Form Visually
+
+```bash
+1. Press Cmd+Shift+M (switch to Modular)
+2. Type: "create a container"
+3. Type: "create an input field" (twice for email & password)
+4. Type: "create a button"
+5. In the Layers panel:
+   - Drag button over container
+   - Hold Shift and drop to nest inside
+   - Repeat for input fields
+6. Style your components:
+   - Select container, change background color
+   - Select button, change to green
+   - Adjust sizes with resize handles
+7. Move the container - all nested elements move together!
+```
+
+---
 
 ## 🏗️ Architecture
 
 ### Tech Stack
 
-**Frontend**
+**Frontend:**
 - React 19 with TypeScript
-- TailwindCSS for styling
+- TailwindCSS v3 for styling
 - Zustand for state management
 - xterm.js for terminal emulation
+- Monaco Editor for code editing
 - Phosphor Icons for UI
 
-**Backend**
-- Tauri v2 (Rust)
+**Backend:**
+- Tauri v2 (Rust-based)
 - portable-pty for cross-platform PTY
+- Native file system operations
 - Native window management
 
-**Build**
+**Build:**
 - Vite for fast development
+- TypeScript strict mode
 - Rust cargo for native compilation
-- ~8MB final bundle (vs 120MB for Electron)
+- ~3.5MB final bundle (vs 120MB+ for Electron)
 
 ### Project Structure
 
 ```
-claude-terminal/
+claude-code/
 ├── src/
 │   ├── components/
 │   │   ├── CodeMode/          # Terminal emulator
 │   │   │   └── Terminal.tsx
-│   │   ├── ModularMode/        # Visual constructor
-│   │   │   ├── Canvas.tsx      # Main canvas with zoom
-│   │   │   ├── DraggableElement.tsx  # Draggable/resizable elements
-│   │   │   ├── LayersPanel.tsx       # Hierarchical layer list
-│   │   │   ├── PropertiesPanel.tsx   # Property editor
+│   │   ├── EditorMode/         # Code editor with AI
+│   │   │   ├── EditorMode.tsx      # Main editor container
+│   │   │   ├── FileExplorer.tsx    # File tree sidebar
+│   │   │   ├── FileTabs.tsx        # Open file tabs
+│   │   │   ├── Toolbar.tsx         # Editor toolbar
+│   │   │   └── AIChatPanel.tsx     # AI assistant panel
+│   │   ├── ModularMode/        # Visual UI builder
+│   │   │   ├── Canvas.tsx          # Main canvas with zoom
+│   │   │   ├── DraggableElement.tsx # Draggable/resizable elements
+│   │   │   ├── LayersPanel.tsx      # Hierarchical layer list
+│   │   │   ├── PropertiesPanel.tsx  # Property editor
 │   │   │   ├── ConversationPanel.tsx # Chat history
-│   │   │   └── WelcomeScreen.tsx     # Getting started
+│   │   │   └── WelcomeScreen.tsx    # Getting started
 │   │   └── shared/
-│   │       └── Header.tsx      # App header with mode toggle
+│   │       └── Header.tsx      # App header with 3-mode toggle
 │   ├── hooks/
 │   │   └── useTerminal.ts      # Terminal lifecycle management
 │   ├── lib/
-│   │   └── claude.ts           # Mock Claude API client
+│   │   └── claude.ts           # Claude API client
 │   ├── store/
-│   │   └── appStore.ts         # Global state
+│   │   └── appStore.ts         # Global state (Zustand)
 │   ├── types/
-│   │   └── modular.ts          # TypeScript types
+│   │   ├── index.ts            # Global types
+│   │   └── modular.ts          # Modular mode types
 │   └── main.tsx                # App entry point
 ├── src-tauri/
 │   ├── src/
 │   │   ├── main.rs             # Tauri app initialization
+│   │   ├── lib.rs              # Library exports
 │   │   ├── terminal.rs         # PTY management
-│   │   └── commands.rs         # Tauri commands
+│   │   ├── commands.rs         # Terminal commands
+│   │   └── filesystem.rs       # File system operations
 │   └── tauri.conf.json         # Tauri configuration
-└── package.json
+├── package.json
+└── README.md
 ```
+
+---
 
 ## 🔧 Building for Production
 
@@ -188,19 +282,21 @@ claude-terminal/
 npm run tauri build
 ```
 
-This creates:
-- **macOS**: `.dmg` installer in `src-tauri/target/release/bundle/dmg/`
-- **Windows**: `.msi` installer in `src-tauri/target/release/bundle/msi/`
-- **Linux**: `.deb` or `.AppImage` in `src-tauri/target/release/bundle/`
+**Output locations:**
+- **macOS**: `src-tauri/target/release/bundle/dmg/Claude Code_0.1.0_aarch64.dmg`
+- **Windows**: `src-tauri/target/release/bundle/msi/`
+- **Linux**: `src-tauri/target/release/bundle/deb/` or `.AppImage`
 
 ### Build Configuration
 
 Edit `src-tauri/tauri.conf.json` to customize:
 - App name and version
-- Window dimensions
+- Window dimensions (default: 1400x900)
 - Bundle identifier
 - System permissions
 - Icon paths
+
+---
 
 ## 🎨 Customization
 
@@ -208,42 +304,54 @@ Edit `src-tauri/tauri.conf.json` to customize:
 
 Edit `tailwind.config.js`:
 
-```js
+```javascript
 extend: {
   colors: {
-    'claude-purple': '#a78bfa',  // Code mode accent
-    'claude-green': '#34d399',   // Modular mode accent
-    'terminal-bg': '#0f1419',
+    'claude-purple': '#a78bfa',    // Terminal mode accent
+    'claude-green': '#34d399',     // Modular mode accent
+    'terminal-bg': '#0a0e14',
     'terminal-surface': '#1a1f29',
+    'terminal-border': '#2d3748',
   }
 }
 ```
 
-### Adding New Element Types
+### Adding Monaco Editor Languages
 
-1. Add type to `src/types/modular.ts`:
+In `EditorMode.tsx`, the language is auto-detected from file extension:
+
 ```typescript
-type: 'button' | 'container' | 'text' | 'image' | 'input' | 'card' | 'your-new-type'
+const getLanguageFromPath = (path: string): string => {
+  const ext = path.split('.').pop()?.toLowerCase();
+  switch (ext) {
+    case 'ts': case 'tsx': return 'typescript';
+    case 'js': case 'jsx': return 'javascript';
+    case 'py': return 'python';
+    case 'rs': return 'rust';
+    // Add your language here
+    default: return 'plaintext';
+  }
+};
 ```
 
-2. Implement rendering in `src/components/ModularMode/DraggableElement.tsx`:
-```typescript
-case 'your-new-type':
-  return <YourCustomElement />;
-```
+---
 
 ## 🐛 Troubleshooting
 
-### Terminal shows 3 prompts
-- Fixed: React Strict Mode disabled in production
+### Editor shows black screen
+- **Fix**: Ensure file paths are valid
+- Check browser console for errors
+- Try switching modes and back
 
-### Elements won't drag/resize
-- Ensure you're clicking the drag handle (⋮⋮) for layer reordering
-- For canvas dragging, click anywhere on the element
+### Terminal not responsive
+- **Fix**: Terminal auto-resizes with ResizeObserver
+- Try switching to another mode and back
+- Restart the app
 
-### Zoom not working
-- Check that you're in Modular Mode (not Code Mode)
-- Try clicking directly on the +/- buttons
+### File operations not working
+- **Fix**: Ensure Tauri has file system permissions
+- Check that file paths are absolute
+- Verify files aren't locked by other processes
 
 ### Build fails on macOS
 ```bash
@@ -264,23 +372,48 @@ sudo apt-get install libwebkit2gtk-4.0-dev \
     librsvg2-dev
 ```
 
+---
+
 ## 🤝 Contributing
 
-This project was built as a demo for Anthropic job application. Feel free to fork and experiment!
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/ultracreative/claude-terminal/issues).
+
+### Development Workflow
+
+1. Fork the repo
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
 
 ## 📝 License
 
-MIT License - see LICENSE file for details
+MIT License - see [LICENSE](LICENSE) file for details.
+
+---
 
 ## 🙏 Acknowledgments
 
 - **Anthropic** - For Claude AI and the inspiration
 - **Tauri Team** - For the amazing desktop app framework
 - **xterm.js** - For robust terminal emulation
+- **Monaco Editor** - For VS Code's editor engine
 - **React Team** - For the best UI framework
 
 ---
 
-**Built with ❤️ for the Anthropic team**
+## 📊 Stats
 
-*Showcasing Claude Terminal - Where code meets creativity*
+- **Lines of Code**: 13,382+
+- **Components**: 20+
+- **Bundle Size**: ~3.5MB (DMG)
+- **Platforms**: macOS, Windows, Linux
+- **Languages Supported**: TypeScript, JavaScript, Python, Rust, JSON, CSS, HTML, Markdown, and more
+
+---
+
+**Built with ❤️ by ultracreative**
+
+*Claude Code - Where Terminal meets Editor meets Builder*

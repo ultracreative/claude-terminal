@@ -3,7 +3,7 @@ export interface ClaudeMessage {
   content: string;
 }
 
-export type ClaudeMode = 'developer' | 'modular';
+export type ClaudeMode = 'developer' | 'modular' | 'editor';
 
 const DEVELOPER_SYSTEM_PROMPT = `You are Claude in Developer Mode - a concise, technical AI assistant for experienced developers.
 
