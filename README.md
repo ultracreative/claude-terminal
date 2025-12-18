@@ -516,6 +516,6 @@ For inquiries, collaboration opportunities, or to discuss the vision behind Clau
 
 ---
 
-**Built with ❤️ by Dan Rodriguez**
+**Built with ❤️ by Dan Rodriguez • Assisted by Claude**
 
 *"Code is for machines. Creation is for humans."*
